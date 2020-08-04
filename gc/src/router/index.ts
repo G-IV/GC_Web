@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
 import Home from '../views/Home.vue'
 import Accounts from '../views/Accounts.vue'
+import Tournaments from '../views/Tournaments.vue'
+import Tours from '../views/Tours.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +17,16 @@ Vue.use(VueRouter)
       path: '/Accounts',
       name: 'Accounts',
       component: Accounts
+    },
+    {
+      path: '/Tournaments',
+      name: 'Tournaments',
+      component: Tournaments
+    },
+    {
+      path: '/Tours',
+      name: 'Tours',
+      component: Tours
     },
   {
     path: '/about',

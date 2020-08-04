@@ -1,12 +1,14 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
+  <b-container id="app" class="vh-100">
+    <div id="nav" class="navHeight">
+      <router-link to="/" class="routerHeight">Home</router-link> |
       <router-link to="/Accounts">Accounts</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/Tours">Tours</router-link> |
+      <router-link to="/Tournaments">Tournaments</router-link> |
+      <router-link to="/about" class="routerHeight">About</router-link>
     </div>
     <router-view/>
-  </div>
+  </b-container>
 </template>
 
 <style lang="scss">
@@ -30,4 +32,14 @@
     }
   }
 }
+</style>
+
+<style>
+.routerHeight{
+  height: calc(100vh - (60px));
+}
+.navHeight{
+  height: 60px !important;
+}
+
 </style>
