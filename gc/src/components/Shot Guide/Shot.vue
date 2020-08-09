@@ -32,7 +32,7 @@
                 <b-form-input id="shotElevation" v-model="shot.elevation" type="number"></b-form-input>
             </b-form-group>
         </b-form>
-        Driver Adjumstent <br>
+        <Club></Club>
         Wood Adjumstent <br>
         Long Iron Adjumstent <br>
         Short Iron Adjumstent <br>
@@ -44,8 +44,12 @@
 </template>
 
 <script>
+    import Club from '../Clubs/Club'
 export default {
     name: 'Shot',
+    components: {
+        Club
+    },
     data(){
         return{
             shot:{
